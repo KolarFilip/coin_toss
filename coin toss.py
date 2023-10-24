@@ -1,20 +1,20 @@
 import random
 
+while True:
+ choices = "heads", "tails"   
+ options = (random.choice(choices))
+ flip = options 
 
-choices = "heads", "tails" 
-options = (random.choice(choices))
-flip = options 
-while True: 
-  user_input = input("Type your choice: ")
-  if user_input == "heads" or "tails":
+ user_input = input("Type your choice: ")
+ if user_input == "heads" or "tails":
    print("You choosen!", user_input)
 
-  if flip == "tails":
+ if flip == "tails":
     print("Coin flipped on tails!")
-  if flip == "heads":
+ if flip == "heads":
     print("Coin flipped on heads!")  
 
-  if user_input == flip:
+ if user_input == flip:
     print("You won!")
-  else:
+ else:
     print("You lost!")
